@@ -61,51 +61,5 @@ if st.button("🔎 Check Eligibility"):
         </div>
     """, unsafe_allow_html=True)
 
-    # Explanation prompt
-    # prompt = f"""
-    # A person with the following profile applied for a loan:
-    # - Dependents: {no_of_dependents}
-    # - Education: {education}
-    # - Self Employed: {self_employed}
-    # - Annual Income: ₹{income_annum}
-    # - Loan Amount: ₹{loan_amount}
-    # - Loan Term: {loan_term} months
-    # - CIBIL Score: {cibil_score}
-    # - Residential Assets: ₹{residential_assets_value}
-    # - Commercial Assets: ₹{commercial_assets_value}
-    # - Luxury Assets: ₹{luxury_assets_value}
-    # - Bank Asset Value: ₹{bank_asset_value}
-
-    # The loan was *{'approved' if prediction[0] == 1 else 'rejected'}*. 
-    # Please explain why and provide step-by-step reasoning.
-    # If rejected, suggest practical ways to improve their eligibility for the next application.
-    # """
-
-    # # AI Explanation using Hugging Face InferenceClient
-    # explanation = ""
-    # from gradio_client import Client
-
-    # client = Client("KingNish/Very-Fast-Chatbot")
-    # explanation = client.predict(
-    # 		Query=prompt,
-    # 		api_name="/predict"
-    # )
-
-    # # for chunk in stream:
-    # #         explanation += chunk.choices[0].delta.content
-
-    # # explanation = explanation.strip().replace("\n", "\n\n")  # Formatting for Streamlit
-
-    # # Explanation Card
-    # st.markdown("""
-    # <h4 style='margin-top: 20px;'>🗨 AI Guidance & Explanation</h4>
-    # """, unsafe_allow_html=True)
-
-    # st.markdown(f"""
-    # <div style="background-color: #f9f9f9; border-radius: 12px; padding: 15px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border-left: 5px solid {'#4CAF50' if prediction[0] == 1 else '#FF5252'};">
-    #     <p style="font-size: 16px; color: #444; line-height: 1.6;">{explanation}</p>
-    # </div>
-    # """, unsafe_allow_html=True)
-
-    # st.success("✨ Pro Tip: Keep your financial documents ready and regularly monitor your CIBIL score to boost your chances!")
-
+    
+    
