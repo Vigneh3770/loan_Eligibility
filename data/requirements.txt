@@ -3,5 +3,6 @@ pandas
 scikit-learn
 transformers
 huggingface-hub
-gradio_client
+gradio-client
+
 pip
